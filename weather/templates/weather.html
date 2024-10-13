@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Nick Weather</title>
+</head>
+
+<body>
+    <main>
+        <div class="left_section">
+            <div class="left_container1">
+                <div class="search-barre">
+                    <form method="post" class="input_search">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Get Weather</button>
+                    </form>
+                </div>
+                <h4 class="date_time">{{ weather_data.city }},<span> {{ weather_data.country }}</span></h4>
+                <h1 class="temp_c">{{ weather_data.temperature }}°C</h1>
+
+            </div>
+            <hr>
+            <div class="left_container2">
+                <div>
+                    <img src="{{ weather_data.icon }}" alt="" class="pic">
+                    <p>{{ weather_data.description }}</p>
+                </div>
+                <div class="rain">
+                    <img src="{% static 'assets/rain.png' %}" alt="" class="pic">
+                    <p>Humidity - {{ weather_data.humidity }}%</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

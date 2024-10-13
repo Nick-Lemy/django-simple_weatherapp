@@ -1,0 +1,243 @@
+/* body {
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    padding: 10%;
+    justify-content: center;
+    color: white;
+}
+
+
+.left_section{
+    background-color: rgb(111, 199, 209);
+    border-radius: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.left_container1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_search {
+    border-radius: 14px;
+    border-color: #8c8a89;
+    border-width: 1px;
+    padding: 5%;
+    width: 80%;
+    height: 40%;
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    background-color: transparent;
+    text-align: center;
+    background-size: 20px;
+}
+
+.weathe_img {
+    width: 50%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.temp_c{
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 2%;
+    margin-left: 2%;
+}
+
+.date_time {
+    font-size: 20px;
+}
+
+.date_time span {
+    color: rgb(122, 118, 118);
+}
+
+.left_container2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.left_container2 div {
+    display: flex;
+    flex-direction: row;
+}
+
+.pic {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    padding-top: 8%;
+    padding-right: 4%;
+    
+}
+.left_container2 div p{
+    padding-top: 2%;
+}
+.rain{
+    margin-bottom: 3%;
+}
+
+.left_container2 div p{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+hr {
+    border-color: rgb(0, 0, 0);
+    border: 10px;
+    position: relative;
+}
+
+.city_img {
+    margin-top: 10%;
+    background-image: url("assets/Statue-of-Liberty-Island-New-York-Bay.webp");
+    background-repeat:no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    padding: 5px;
+    width: auto;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.city_img h4 {
+    color: rgb(0, 0, 0);
+    filter: opacity(100%);
+    font-weight: bolder;
+    align-items: center;
+} */
+
+/* General styling for the whole page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Left section styling */
+.left_section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.left_section hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Container 1: Weather and City info */
+.left_container1 {
+    margin-bottom: 20px;
+}
+
+.input_search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input_search button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input_search button:hover {
+    background-color: #0056b3;
+}
+
+.date_time {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.date_time span {
+    font-weight: bold;
+}
+
+.temp_c {
+    font-size: 40px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Container 2: Additional info like icon and humidity */
+.left_container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_container2 div {
+    text-align: center;
+}
+
+.left_container2 p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+}
+
+.pic {
+    width: 60px;
+    height: 60px;
+}
+
+.rain img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    .left_section {
+        width: 100%;
+    }
+
+    .left_container2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left_container2 img {
+        width: 50px;
+        height: 50px;
+    }
+}
