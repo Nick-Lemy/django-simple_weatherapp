@@ -26,9 +26,8 @@ SECRET_KEY = 'django-insecure-*e$7#_ove%5@c8q0v-nq&r^1yu55#@mj6hb2fk($xeozz+!v=2
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'f35d-2c0f-fe30-3c0f-0-ac33-f6cd-fd1-2b81.ngrok-free.app',
     '127.0.0.1',
-    'a09a-2c0f-fe30-3c0f-0-31e8-b2cc-e0a5-4f1e.ngrok-free.app',
+    '.vercel.app',
 ]
 
 
